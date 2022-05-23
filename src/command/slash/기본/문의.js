@@ -8,7 +8,7 @@ module.exports = {
     async execute(interaction, client) {
         let modal = new Modal()
             .setCustomId('help-1')
-            .setTitle(`Mora 관리자에게 문의합니다.`)
+            .setTitle(`관리자에게 문의합니다.`)
             .addComponents([
                 new TextInputComponent()
                     .setCustomId('help-input-1')

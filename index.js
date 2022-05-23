@@ -13,6 +13,7 @@ client.slashcommands = new Collection()
 // mongoose.connect(mongo_url, {
 //     useNewUrlParser: true, useUnifiedTopology: true
 // }).then(console.log("✅ | 데이터베이스 연결 완료"))
+require('discord-modals')(client)
 
 //슬래쉬 커맨드
 fs.readdirSync("./src/command/slash").forEach(dirs => {

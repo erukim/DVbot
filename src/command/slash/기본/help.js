@@ -165,7 +165,7 @@ Developer: & ㅁㅅ#0007
 
         collector.on("end", async (collect) => {
             console.log("시간초과!");
-            interaction.update({ content: "시간이 초과되어 고정되었습니다.", components: [link] }); //연동작업
+            interaction.editReply({ components: [] }); //연동작업
         });
     },
 };
