@@ -1,0 +1,32 @@
+const client = require('../../../index')
+const { MessageEmbed } = require('discord.js')
+
+client.on('modalSubmit', async (modal) => {
+    if (modal.customId === "say") {
+        // const sayembed = new MessageEmbed()
+        //     .setAuthor({ name: `DV BOT System`, iconURL: client.user.displayAvatarURL() })
+        //     .setFooter(`공지 전송 ${modal.user.username}`, client.user.displayAvatarURL())
+        //     .setColor(0x2894C2)
+        //     .setTimestamp()
+        // await modal.deferReply({ ephemeral: true });
+        // let msg = modal.getTextInputValue('say-input-1-1')
+
+        // var index = 0;
+
+        // modal.followUp({ content: "성공적으로 공지를 전송했습니다!" })
+        // modal.client.guilds.cache.forEach(guild => {
+        //     sayembed.setTitle("공지사항")
+        //     sayembed.setDescription(msg)
+        //     if (guild.systemChannel) {
+        //         guild.systemChannel.send({ embeds: [sayembed] })
+        //         index = index + 1
+        //     }
+
+        //     if (!guild.systemChannel) {
+        //         console.log(guild.name || guild.id)
+        //     }
+        // })
+        // modal.editReply(`${index}개의 서버에 공지를 보냈어요.`)
+        modal.reply("ㅋㅋ")
+    }
+});
